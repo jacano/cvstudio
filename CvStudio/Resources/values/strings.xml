@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Cv Studio</string>
+  <string name="AddCvView_AddCv">Add a new Cv</string>
+  <string name="AddCvView_CvLinkHint">Paste your cv link here</string>
+</resources>

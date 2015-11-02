@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/AddCV"
+            android:title="Add CV" />
+        <item
+            android:id="@+id/BrowseCV"
+            android:title="Browse all CVs" />
+        <item
+            android:id="@+id/Reset"
+            android:title="Reset" />
+    </group>
+
+</menu>
