@@ -3,9 +3,12 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <Button
-        android:id="@+id/MyButton"
+    <ImageView
+        android:id="@+id/ProfileImage"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello" />
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ProfileName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

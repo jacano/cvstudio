@@ -25,6 +25,8 @@ namespace CvStudio.Fragments
                 var cvStudioApp = (CvStudioApplication)Activity.Application;
                 var cvService = cvStudioApp.Container.Resolve<ICvService>();
 
+                cvService.Initialize();
+
                 var link = _cvLinkEditText.Text;
 
                 cvService.Initialize();

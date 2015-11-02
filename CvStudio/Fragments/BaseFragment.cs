@@ -11,15 +11,11 @@ namespace CvStudio.Fragments
         protected BaseFragment()
         {
             RetainInstance = true;
+            HasOptionsMenu = true;
         }
 
-        public override View OnCreateView(LayoutInflater inflater, Android.Views.ViewGroup container,
-            Android.OS.Bundle savedInstanceState)
+        public override View OnCreateView(LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
         {
-            base.OnCreateView(inflater, container, savedInstanceState);
-
-            HasOptionsMenu = true;
-
             var view = inflater.Inflate(LayoutResource, null);
 
             return view;
