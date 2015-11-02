@@ -20,9 +20,9 @@ namespace CvStudio.Tests.Utils
             var fakeCvService = new FakeCvService();
             var cvs = await fakeCvService.GetAllCvs();
 
-            var firstCv = cvs.First();
+            var cv = cvs.ElementAt(0);
 
-            var json = await serializationService.Serialize(firstCv);
+            var json = await serializationService.Serialize(cv);
 
             Console.WriteLine(json);
         }

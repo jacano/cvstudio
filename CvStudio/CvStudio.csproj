@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -88,6 +88,7 @@
     <Compile Include="Adapters\ListAdapter.cs" />
     <Compile Include="Adapters\CvAdapter.cs" />
     <Compile Include="CvStudioApplication.cs" />
+    <Compile Include="Fragments\ResetCvFragment.cs" />
     <Compile Include="Fragments\AddCvFragment.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Fragments\CvDetailFragment.cs" />
@@ -111,6 +112,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\nav_header.axml" />
+    <AndroidResource Include="Resources\layout\ResetCvView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\CvDetailView.axml" />

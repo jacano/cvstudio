@@ -42,6 +42,7 @@ namespace CvStudio.Activities
                         NavigateToFragment(new CvSelectorFragment());
                         break;
                     case Resource.Id.Reset:
+                        NavigateToFragment(new ResetCvFragment());
                         break;
                 }
 

@@ -8,7 +8,7 @@ namespace CvStudio.Fragments
 {
     public class CvDetailFragment : BaseFragment
     {
-        private Cv _cv;
+        private readonly Cv _cv;
 
         public CvDetailFragment(Cv cv)
         {
@@ -22,14 +22,18 @@ namespace CvStudio.Fragments
             var view = base.OnCreateView(inflater, container, savedInstanceState);
 
             var profileImage = view.FindViewById<ImageView>(Resource.Id.ProfileImage);
-            var profileName = view.FindViewById<TextView>(Resource.Id.ProfileName);
+            var profileName = view.FindViewById<TextView>(Resource.Id.ProfileFullName);
+            var profileAddress = view.FindViewById<TextView>(Resource.Id.ProfileAddress);
+            var profileBirthday = view.FindViewById<TextView>(Resource.Id.ProfileBirthday);
 
             Picasso.With(Activity)
                .Load(_cv.PhotoUrl)
                .Placeholder(Resource.Drawable.placeholderuser)
                .Into(profileImage);
 
-            profileName.Text = _cv.Name;
+            profileName.Text = $"{_cv.Name} {_cv.Surname1} {_cv.Surname2}";
+            profileAddress.Text = _cv.Address;
+            profileBirthday.Text = _cv.Birthday.ToShortDateString();
 
             return view;
         }

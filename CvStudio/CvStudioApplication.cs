@@ -37,6 +37,7 @@ namespace CvStudio
             builder.RegisterInstance<IAppService>(new AppService(this));
 
             builder.RegisterType<CvService>().As<ICvService>();
+            //builder.RegisterType<FakeCvService>().As<ICvService>();
             builder.RegisterType<LogService>().As<ILogService>();
             builder.RegisterType<JsonSerializerService>().As<ISerializationService>();
             builder.RegisterType<FileService>().As<IFileService>();

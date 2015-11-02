@@ -3,4 +3,7 @@
   <string name="ApplicationName">Cv Studio</string>
   <string name="AddCvView_AddCv">Add a new Cv</string>
   <string name="AddCvView_CvLinkHint">Paste your cv link here</string>
+  <string name="AddCvView_Added">Added</string>
+  <string name="AddCvView_Error">Error adding Cv</string>
+  <string name="ResetCvView_Done">Done</string>
 </resources>
