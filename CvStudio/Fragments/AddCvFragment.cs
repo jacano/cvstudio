@@ -24,6 +24,7 @@ namespace CvStudio.Fragments
             {
                 var cvStudioApp = (CvStudioApplication)Activity.Application;
                 var cvService = cvStudioApp.Container.Resolve<ICvService>();
+                var toastService = cvStudioApp.Container.Resolve<IToastService>();
 
                 cvService.Initialize();
 
@@ -31,6 +32,15 @@ namespace CvStudio.Fragments
 
                 cvService.Initialize();
                 var added = await cvService.AddCv(link);
+
+                if (added)
+                {
+                    toastService.ShowToast("added");
+                }
+                else
+                {
+                    toastService.ShowToast("Error adding Cv");
+                }
             };
 
             return view;

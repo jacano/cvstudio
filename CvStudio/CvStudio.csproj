@@ -92,6 +92,7 @@
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Fragments\CvDetailFragment.cs" />
     <Compile Include="Fragments\CvSelectorFragment.cs" />
+    <Compile Include="Services\ToastService.cs" />
     <Compile Include="Services\FileService.cs" />
     <Compile Include="Services\HttpService.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -3,5 +3,7 @@
     public interface IAppService
     {
         string GetAppName();
+
+        object GetApp();
     }
 }

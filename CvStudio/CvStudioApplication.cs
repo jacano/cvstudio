@@ -36,10 +36,11 @@ namespace CvStudio
 
             builder.RegisterInstance<IAppService>(new AppService(this));
 
-            builder.RegisterType<FakeCvService>().As<ICvService>();
+            builder.RegisterType<CvService>().As<ICvService>();
             builder.RegisterType<LogService>().As<ILogService>();
             builder.RegisterType<JsonSerializerService>().As<ISerializationService>();
             builder.RegisterType<FileService>().As<IFileService>();
+            builder.RegisterType<ToastService>().As<IToastService>();
             builder.RegisterType<HttpService>().As<IHttpService>();
 
             Container = builder.Build();

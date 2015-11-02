@@ -30,5 +30,10 @@ namespace CvStudio.Services
 
             return appName;
         }
+
+        public object GetApp()
+        {
+            return _application;
+        }
     }
 }
