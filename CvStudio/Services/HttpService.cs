@@ -19,12 +19,13 @@ namespace CvStudio.Services
             string result = null;
 
             var client = new OkHttpClient();
-            var request = new Request.Builder()
-                .Url(url)
-                .Build();
 
             try
             {
+                var request = new Request.Builder()
+                    .Url(url)
+                    .Build();
+
                 var response = await client.NewCall(request).ExecuteAsync();
                 var body = response.Body().String();
 
